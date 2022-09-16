@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Cambridge hospital</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hospital-alt"></i> Cambridge hospital </a>
+
+    <nav class="navbar">
+        <a style="color: blue;" href="#home">home</a>
+        <a href="#Facility">Facility</a>
+        <a href="#services">services</a>
+        <a href="#about">About US</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#book">Appointment</a>
+        
+        <div style="margin-left: 110; padding-left: 20px;  ;" class="dropdown">
+            <button style="border: 0px ; background-color: transparent; text-decoration: none; margin: 5px ;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              More 
+            </button>
+            <ul style="border: 0px solid blue; text-decoration: none; font-size: medium; background-color:transparent;" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a class="dropdown-item" href="#blogs" >Academic</a></li>
+                <li><a class="dropdown-item" href="./feedback.html">Feedback</a></li>
+                <li><a class="dropdown-item" href="./query.html">Queries</a></li>
+                <li><a class="dropdown-item" href="./vacancies.html">Vacancies</a></li>
+
+            </ul>
+          </div>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="image/home-img.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h3><b>Welcome !</b>Cambridge<center>hospital</center></h3>
+       <h4><center>24/7 Hour Service</center></h4>
+        <a href="" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"> contact us <span class="fas fa-chevron-right "></span> </a>
+      
+        <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div style="width: 900px;" class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 style="font-size: medium; color: blue;" class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container bg-light mb-5" style="border-radius: 10px;">
+                        <div class="row">
+                         
+                            <div class="col">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.9375711041125!2d-80.33077048403862!3d43.37832937913173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c76290cfff9b9%3A0x54d3d7d0f4e0b8fe!2sCambridge%20Memorial%20Hospital!5e0!3m2!1sen!2s!4v1649483906190!5m2!1sen!2s" width="370" height="500px" style="border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            
+                            <div class="col">
+                                <form>
+                                    <label style="font-size: medium;" class="form-label">Full Name</label>
+                                    <div class="input-group"><div class="input-group-text bg-primary"><i class="bi bi-person-fill" style="color:white;"></i></div>
+                                    <input style="height: 35px; font-size: medium;" type="text" class="form-control" placeholder="Enter your Name" required pattern="[A-Z a-z]{5,30}"></div>
+                                    <div class="form-text mb-3" style="font-size: medium;">Name must be Upper or Lower case</div>
+                    
+                                    <label style="font-size: medium;" class="form-label">E-mail</label>
+                                    <div class="input-group mb-3"><div class="input-group-text bg-primary"><i class="bi bi-envelope-fill" style="color:white;"></i></div>
+                                    <input style="height: 35px; font-size: medium;" type="email" class="form-control" placeholder="Enter your E-mail" required pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,}"></div>
+                    
+                                    <label style="font-size: medium;" class="form-label">Phone Number</label>
+                                    <div class="input-group mb-3"><div class="input-group-text bg-primary"><i class="bi bi-telephone-fill" style="color:white;"></i></div>
+                                    <input style="height: 35px; font-size: medium;" type="number" class="form-control" placeholder="0323-4567890" required pattern="[0-9]{4}+-[0-9]{7}"></div>
+                    
+                                    <label style="font-size: medium;" class="form-label">Message</label>
+                                    <div class="input-group mb-3"><div class="input-group-text bg-primary"><i class="bi bi-chat-square-text-fill" style="color:white;"></i></div>
+                                    <textarea class="form-control" rows="5" placeholder="Write your Message" required style="font-size: medium;"></textarea></div>
+                    
+                                    <button style="width: 350px; margin-left: 10px;" type="submit" class="btn btn-outline-primary mb-3">Send&nbsp;<i class="bi bi-send"></i></button>   
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- icons section starts  -->
+<section class="Facility" id="Facility"></section>
+<h2 class="heading"> our <span>facility</span> </h2>
+
+<section class="icons-container">
+    <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>140+</h3>
+        <p>doctors at work</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>1040+</h3>
+        <p>satisfied patients</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-procedures"></i>
+        <h3>500+</h3>
+        <p>bed and rooms facility</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-hospital"></i>
+        <h3>20+</h3>
+        <p>I.C.U Facility</p>
+    </div>
+</section>
+
+<!-- icons section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>departments & services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-notes-medical"></i>
+            <h3>Checkups</h3>
+         
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> learn more <span class="fas fa-chevron-right"></span> </a>
+            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel">Doctor's Schedule</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <table class="table table-bordered border-primary table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Doctor's Name</th>
+                    <th scope="col">Time & Day</th>
+                    <th scope="col">Specilization</th>
+                    <th scope="col">Degree's</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Dr.Hamza Chauhan</td>
+                    <td>(9 a.m to 2 p.m)-(Mon-Fri)</td>
+                    <td>Family Doctor</td>
+                    <td>DO, MD</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Dr.Sara Malik</td>
+                    <td>(11 a.m to 5 p.m)-(Tue-Sat)</td>
+                    <td>Gynacologist</td>
+                    <td>MBBS, GYN</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Dr.Rahim Khan</td>
+                    <td>(10 a.m to 7 p.m)-(Mon-Sat)</td>
+                    <td>Surgeon</td>
+                    <td>MBBS, MS</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Dr.Owais Mansoor</td>
+                    <td>(12 a.m to 3 p.m)-(Tue-Sat)</td>
+                    <td>Dentist</td>
+                    <td>DDS , DMD</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Dr.Sufyaan Khan</td>
+                    <td>(10 a.m to 4 p.m)-(Mon-Thurs)</td>
+                    <td>Cardiologist</td>
+                    <td>MD CARDIOLOGY</td>
+                  </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                    <td>Dr.Ibrahim Azhar</td>
+                    <td>(11 a.m to 9 p.m)-(Mon-Fri)</td>
+                    <td>Radiologist</td>
+                    <td>MD , BSRT</td>
+                </tbody>
+              </table>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+        </div>
+
+        <div class="box">
+            <i class="fas fa-ambulance"></i>
+            <h3>24/7 Ambulance</h3>
+            
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> learn more <span class="fas fa-chevron-right"></span></a>
+
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel2">Ambulance Service</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+          <img src="./image/ambulance.jpg" alt="ambulance" class="img-fluid">
+          <hr>
+            <p style="font-size: medium; color: black;">Our Hospital also have 24/7/365 Ambulance Service ready to respond to your emergency.
+                Our ambulance service is fast and reliable.
+                We have a team of highly qualified and experienced paramedics who are ready to help you in any emergency.
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+
+        <div class="box">
+            <i class="fas fa-user-md"></i>
+            <h3>expert doctors</h3>
+          
+            <a href="#doctors" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-pills"></i>
+            <h3>medicines</h3>
+     
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel3">Medicines</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+            <img src="./image/pharmacy.jpg" alt="pharmacy" class="img-fluid">
+                </div>
+                <div class="col">
+            <img src="./image/medicine_pills.JPG" alt="medicines" class="img-fluid">
+                </div>       
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>Medicines and Pharmacy</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a pharmacy and a medicine store. We have a wide range of medicines and pharmaceuticals available for you to purchase.
+                    </p>
+                </div>       
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-procedures"></i>
+            <h3>bed and i.c.u facility</h3>
+          
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"> learn more <span class="fas fa-chevron-right"></span></a>
+
+                    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel4">Bed And I.C.U Facility</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+          <img src="./image/beds.jpg" alt="beds" class="img-fluid">
+                </div>
+                <div class="col">
+                    <h3 style="color:var(--green);";>Beds Facility</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a large number of beds available for patients. We have most comfortable beds for patients. Approximately, we have 500 + beds in our hospital.
+                    </p>
+                    <hr>
+                </div>       
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>ICU Facility</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has 20 + ICU available for patients. We have best ICU with advanced equipments for surgery and treatment.
+                    </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <img src="./image/icu.jpg" alt="icu" class="img-fluid">
+                </div>       
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Pateints care</h3>
+       
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel5">Patients Care</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+          <img src="./image/ct_scan.jpg" alt="ct-scan" class="img-fluid" style="border-radius: 10px;">
+                </div>
+                <div class="col">
+                    <img src="./image/dental.jpg" alt="dental" class="img-fluid" style="border-radius: 10px;">
+                </div>  
+                <div class="col">
+                    <img src="./image/eye_care.jpg" alt="eye-care" class="img-fluid" style="border-radius: 10px;">
+                </div>     
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>CT-Scan Facility</h3>
+                    <hr>
+                </div>
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>Dentist department</h3>
+                    <hr>   
+                </div> 
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>Eye-Care Department</h3>
+                    <hr>
+
+                </div>      
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+          <img src="./image/x_ray.jpg" alt="x-ray" class="img-fluid" style="border-radius: 10px;">
+                </div>
+                <div class="col">
+                    <img src="./image/laboratory.jpg" alt="laboratory" class="img-fluid" style="border-radius: 10px;">
+                </div>  
+                <div class="col">
+                    <img src="./image/private_room.jpg" alt="private_room" class="img-fluid" style="border-radius: 10px;">
+                </div>     
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>X-Ray Department</h3>
+                </div>
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>Laboratory</h3>
+                </div> 
+                <div class="col">
+                    <h3 style="color:var(--green); text-align: center;";>Private Rooms</h3>  
+                </div>      
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+        </div>
+
+        <div class="box">
+            <i class="fas fa-clinic-medical"></i>
+            <h3>Centre's</h3>
+       
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop9"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel9">Centre's</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+          <img src="./image/cancer_centre.jpg" alt="cancer" class="img-fluid">
+                </div>
+                <div class="col">
+                    <h3 style="color:var(--green);";>Cancer Centre</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a cancer centre, which is equipped with state-of-the-art cancer treatment facilities. Our Cancer centre is open 24 hours a day, 7 days a week to serve the patients.</p>
+                    </p>
+                    <hr>
+                </div>       
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>Heart Centre</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a heart centre, which is equipped with state-of-the-art heart treatment facilities. Our Heart centre is open 24 hours a day, 7 days a week to serve the patients. Our Cardiologist are also available to assist you in your heart related problems.
+                    </p>
+                    <hr>
+                </div>
+                <div class="col">
+                    <img src="./image/heart-centre.jpg" alt="icu" class="img-fluid">
+                </div>       
+            </div>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+        </div>
+
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>Help Desk</h3>
+       
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop10"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel10">Help Desk</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+                    <img src="./image/reception.jpg" alt="reception" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="./image/billing.jpg" alt="billing" class="img-fluid">
+                </div>      
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>Reception and Biling</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a reception and billing services. Our reception is open 24 hours a day, 7 days a week to serve the patients. We gave full attention to the patients and made sure that they are well attended to. We help the patients to get the bill and also to pay the bill.
+                    </p>
+                </div>
+       
+            </div>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/about-img.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Some Information</h3>
+            <p>Faith – Absolute believe that all means are from the Al Mighty.
+                Dignity, Empathy & Compassion – Recognizing every life as a gift from God, valuing and caring for individuals.
+                Integrity – Honesty, fairness and self-scrutiny in all actions to ensure safety, confidentiality and privacy.
+                Excellence through Teamwork - Foster an atmosphere of trust, collaboration, openness and cooperation.
+                Respect – Extending courtesy to all stakeholders – patients, colleagues, staff, partners, donors, suppliers.
+                Justice & Equity – Ensure fairness in all processes.
+                Diversity, Inclusion & Gender Equality – Providing equal opportunity to all.
+                Ethical Practices & Transparency – Zero tolerance for malpractices, adherence to all applicable laws
+                Learn, Innovate & Lead – Promote research and innovative solutions in health care</p>
+           
+          
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- doctors section starts  -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> Expert<span>doctors</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/doc-1.jpg" alt="">
+            <h3>Sara</h3>
+            <span>expert in Family Physicians</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-2.jpg" alt="">
+            <h3>Hamza</h3>
+            <span>expert in Emergency Medicine</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-3.jpg" alt="">
+            <h3>Ibrahim</h3>
+            <span>expert in Cardiology</span>
+            </span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-4.jpg" alt="">
+            <h3>Umer</h3>
+            <span>Senior Surgeon</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-5.jpg" alt="">
+            <h3>Subhan</h3>
+            <span>expert in Medical Geneticists</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-6.jpg" alt="">
+            <h3>Rohaan</h3>
+            <span>expert in Oncologists</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+
+<!-- booking section starts   -->
+
+<section class="book" id="book">
+
+    <h1 class="heading"> <span>book</span> now </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <h3>book appointment</h3>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" style="height: 45px; font-size: medium; border:var(--border);" required>
+                <option selected>Select Doctor</option>
+                <option value="1">Dr.Hamza</option>
+                <option value="2">Dr.Umer</option>
+                <option value="3">Dr.Rohaan</option>
+                <option value="4">Dr.Subhan</option>
+                <option value="5">Dr.Sara</option>
+                <option value="6">Dr.Ibrahim</option>
+              </select>
+            <input type="text" placeholder="Enter your Name" class="box" pattern="[A-Z a-z]{5,30}" required>
+            <input type="number" placeholder="0300-1234567" class="box" pattern="[0-9]{4}+-[0-9]{7}" required>
+            <input type="email" placeholder="Enter your E-mail" class="box" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,}" required>
+            <input type="date" class="box" required>
+            <input type="submit" value="Book now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- booking section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+    
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/pic-1.png" alt="">
+            <h3>Rohaan</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-stack-overflow"></i>
+            </div>
+            <p class="text">  The services that I receive from (DN) is excellent. Dr. and the staff are friendly and ensure that I am properly informed about my health and care. I would have no qualms in recommending them to friendly and friends.</p>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-2.png" alt="">
+            <h3>Sara</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Wonderful experience with (Cambridge Hospital). Dr. was a wonderful surgeon, and the staff was always helpful and kind. They ensured I had a smooth prep, surgery, and follow-up. I am so glad I chose (Cambridge hospital) and would highly recommend to anyone.</p>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-3.png" alt="">
+            <h3>raheem</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="text"> Great medical office, wonderful and warm experience from start to finish. Appreciate Dr taking time to go over the diagnosis clearly and treatment options. Was referred over by my general doctor and can see why. Highly recommended</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+<!-- Academic section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>Academics</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+            
+                </div>
+                <h3>Laboratory</h3>
+                <p>Be a Specialist as a Laboratory Expert...</p><br><br><br><br>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel6">Laboratory</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+          <img src="./image/laboratory2.jpg" alt="Laboratory" class="img-fluid">
+          <hr>
+            <p style="font-size: medium; color: black;">Our Hospital also have laboratories where students can learn and practice in a comfortable environment with advanced equipments.
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                  
+                </div>
+                <h3>Library</h3>
+
+                <p>Working Hard to be a Doctor wheather you are in Library...</p><br><br><br><br>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                                <!-- Modal -->
+<div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel7">Library</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+          <img src="./image/library1.jpg" alt="library1" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="./image/library2.jpg" alt="library2" class="img-fluid">
+                </div>
+                <hr>  
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>Library</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has a library with a wide range of books and resources. The library is open 24 hours a day, 7 days a week, where you can read, study, and research on your own with the help of our library staff. You can also study and research with your laptop or computer.
+                    </p>
+                    <hr>
+                </div>
+     
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                   
+                </div>
+                <h3>Lecture Halls</h3>
+
+                <p>medicines cure diseases,but only doctor can cure pateints and for cure patients, a doctor must learn...</p><br><br>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"> learn more <span class="fas fa-chevron-right"></span> </a>
+
+                                            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel8">Lecture Halls</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+            <div class="row">
+                <div class="col">
+          <img src="./image/lecture_hall.jpg" alt="lecture_hall" class="img-fluid">
+                </div>
+                <hr>  
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3 style="color:var(--green);";>Lecture Hall</h3>
+                    <p style="font-size: medium; color: black;">Our hospital has many lecture halls for the students to study.
+                        Our Hospitals have approximately 100 lecture halls for the students to study.
+                        Six days a week,students take classes in the lecture halls.
+                    </p>
+                    <hr>
+                </div>
+     
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--Academic section ends -->
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#Facility"> <i class="fas fa-chevron-right"></i> facility </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#about"> <i class="fas fa-chevron-right"></i> about Us </a>
+            <a href="#doctors"> <i class="fas fa-chevron-right"></i> doctors </a>
+            <a href="#book"> <i class="fas fa-chevron-right"></i> book Appointment </a>
+         
+        </div>
+
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +92 123456789 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +92 123456789 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> cambridge-hospital@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> helpdesk@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> karachi ,pakistan </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <img style="margin-left: 150px;" src="./image/logo.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Hamza & Rohaan</span> | &copy;Copyright 2022-23 and All rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".tilt"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+        scale: 1
+    });   
+</script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<!-- bootstrap link -->
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

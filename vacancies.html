@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Vacancies | Cambridge hospital</title>
+
+    <!-- Data Tables link -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
+<style>
+
+html,body{
+  display: grid;
+  height: 100%;
+  
+   background: #eee; 
+}
+</style>
+</head>
+<body style="background-color: #eee;">
+    <header class="header">
+        <a href="./index.html" class="logo"> <i class="fas fa-hospital-alt"></i> Cambridge hospital </a>
+    
+        <nav class="navbar">
+          <i><a  class="bi bi-backspace-fill"style="color: blue;" href="./index.html"><span> BACK</span></a></i>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+
+
+    <!-- Vacancies Section Starts -->
+    <h1 style="margin-top: 95px;" class="heading"> <span> Vacancies</span> </h1>
+     <br>
+     <br>
+    <div class="container" style="font-size: large;">
+     <table class="table table-bordered border-primary table-light table-hover table-striped caption-top" style="font-size: large;" id="myTable">
+        <caption style="color: black;">List of Vacancies</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Jobs</th>
+            <th scope="col">Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Physician</td>
+            <td>Fresh</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Family Doctor</td>
+            <td>3 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Gynacologist</td>
+            <td>1 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Dentist</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Cardiologist</td>
+            <td>3 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Surgeon</td>
+            <td>2-5 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Nurse</td>
+            <td>Fresh</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Ward Boy</td>
+            <td>Fresh</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Receptionist</td>
+            <td>1 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Radiologist</td>
+            <td>1-2 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Eye surgeon</td>
+            <td>3 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Orthopedic surgeon</td>
+            <td>2 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Gastrologist</td>       
+            <td>1 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>X-Ray Technician</td>
+            <td>Fresh</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Dental Assistant</td>
+            <td>1 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Ultra Sound Technician</td>
+            <td>2-4 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>Medical Lab Assistant</td>
+            <td>Fresh</td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>Medical Lab Technician</td>
+            <td>2-3 Years</td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td>I.C.U Assistant</td>
+            <td>1 Year</td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>I.C.U Technician</td>
+            <td>1-2 Years</td>
+          </tr>  
+        </tbody>
+      </table>
+    </div>
+    <!-- Vacancies Section Ends --> 
+
+
+    <!-- Form Section Start -->
+    <h1 style="margin-top: 20px;" class="heading"> <span> Registration Form</span> </h1>
+    
+    <div style="font-size: large;" class="container mt-3">
+        <div class="row">
+            <div class="col">
+            <form>
+                <div class="row">
+                    <div class="col">
+                <label class="form-label">First Name</label><span style="color: red;">*</span>
+                <input style="height: 45px; font-size: medium;" type="text" class="form-control mb-2" required pattern="[A-Z a-z]{5,30}" placeholder="Enter Your First Name">
+                    </div>
+
+                    <div class="col">
+                <label class="form-label">Last Name</label><span style="color: red;">*</span>
+                <input style="height: 45px; font-size: medium;" type="text" class="form-control mb-2" required pattern="[A-Z a-z]{5,30}" placeholder="Enter Your Last Name">
+                    </div>
+                <div class="form-text mb-3">Name must be Upper or Lower case</div>                
+                </div>
+
+                <label class="form-label">Email</label><span style="color: red;">*</span>
+                <input style="height: 45px; font-size: medium; text-transform: lowercase;" type="email" class="form-control mb-2 w-100"  required pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,}" placeholder="Enter Your E-mail">
+                <div class="form-text mb-3">Email must be in lowercase</div>
+
+                <div class="row">
+                    <div class="col">
+                <label class="form-label">Mobile </label><span style="color: red;">*</span>
+                <input style="height: 45px; font-size: medium;" type="number" class="form-control mb-2" required pattern="[0-9]{4}+-[0-9]{7}" placeholder="0312-3456789">
+                    </div>
+            
+                    <div class="col">
+                <label class="form-label">Zip/Postal Code</label><span style="color: red;">*</span>
+                <input style="height: 45px; font-size: medium;" type="number" class="form-control mb-2" required pattern="[0-9]" placeholder="Enter Zip/Postal Code">
+                    </div>            
+                </div><br>
+                
+                <label class="form-label mb-2">Gender</label><span style="color: red;">*</span>
+                <br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                <br><br>
+
+              <div class="row mb-3">
+                  <div class="col">
+              <label class="form-label">Country</label><span style="color: red;">*</span>
+              <input style="height: 45px; font-size: medium; text-transform: capitalize;" type="text" class="form-control mb-2" required pattern="[A-Z a-z]{5,25}" placeholder="Enter Your Country">
+                  </div>
+
+                  <div class="col">
+              <label class="form-label">City</label><span style="color: red;">*</span>
+              <input style="height: 45px; font-size: medium; text-transform: capitalize;" type="text" class="form-control mb-2" required pattern="[A-Z a-z]{5,25}" placeholder="Enter Your City">
+                  </div>               
+              </div>
+
+              <label class="form-label">Select a Job</label><span style="color: red;">*</span>
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" style="height: 45px; font-size: medium;" required>
+                <option selected>Select Vacancy</option>
+                <option value="1">Physician</option>
+                <option value="2">Family Doctor</option>
+                <option value="3">Gynacologist</option>
+                <option value="4">Surgeon</option>
+                <option value="5">Dentist</option>
+                <option value="6">Cardiologist</option>
+                <option value="7">Radiologist</option>
+                <option value="8">Receptionist</option>
+                <option value="9">Nurse</option>
+                <option value="10">Ward Boy</option>
+                <option value="11">Eye Surgeon</option>
+                <option value="12">Orthopedic Surgeon</option>
+                <option value="13">Gastrologist</option>
+                <option value="14">X-Ray Technician</option>
+                <option value="15">Dental Assistant</option>
+                <option value="16">Ultra Sound Technician</option>
+                <option value="17">Medical Lab Assistant</option>
+                <option value="18">Medical Lab Technician</option>
+                <option value="19">I.C.U Assistant</option>
+                <option value="20">I.C.U Technician</option>
+              </select>
+
+              <div class="row">
+                <div class="col">
+            <label class="form-label">CNIC</label><span style="color: red;">*</span>
+            <input style="height: 45px; font-size: medium;" type="number" class="form-control mb-2" required pattern="[0-9]{5}+-[0-9]{7}+-[0-9]{1}" placeholder="42534-1234567-9">
+                </div>
+        
+                <div class="col">
+            <label class="form-label">Upload Your Passport Size Picture</label><span style="color: red;">*</span>
+            <input style="height: 35px; font-size: medium;" type="file" class="form-control mb-3" id="formfile" required>
+            <div class="form-text mb-3">Image with Blue background </div>                
+              </div>            
+            </div>
+
+            <label class="form-label">Upload Your C.V. / Resume</label><span style="color: red;">*</span>
+            <input style="height: 35px; font-size: medium;" type="file" class="form-control mb-3" id="formfile" required>
+            <br>
+      
+          <label class="form-label">Upload All Your Educational Documents at Once</label><span style="color: red;">*</span>
+          <input style="height: 35px; font-size: medium;" type="file" class="form-control mb-3" id="formfilemultiple" required multiple>                        
+          <br>
+
+            <label class="form-label">Address</label><span style="color: red;">*</span>
+            <textarea style="font-size: medium;" cols="30" rows="6" class="form-control mb-2 w-100" required></textarea>
+                
+            <button class="btn btn-success" id="btn">Submit Form</button>
+                
+            </form>
+            </div>
+            <div class="col"><img src="./image/job_vacancy_banner.svg" alt="vacancy_banner" class="img-fluid"></div>
+        </div>
+    </div>
+
+    <!-- Form Section End -->
+
+             <hr>
+             <footer>
+            
+             <div style=" font-size: large; color: blue;place-items: center;
+             text-align: center;" class="credit"> created by <span>Hamza & Rohaan</span> | &copy;Copyright 2022-23 and All rights reserved </div></footer>
+    
+        <!-- custom js file link  -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <!-- bootstrap link -->
+        <script src="./js/bootstrap.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('#myTable').DataTable( { 
+              dom: 'Bfrtip',
+              buttons: ['copy', 'csv', 'excel', 'pdf', 'print']} );
+          } );
+        </script>
+</body>
+</html>
