@@ -6,41 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Donation| Cambridge hospital</title>
+    <title>Donation | Cambridge hospital</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
 <style>
+
 
 html,body{
   display: grid;
   height: 100%;
-  
    background: #eee; 
 }
-
 </style>
 </head>
-<body style="background-color: #eee;">
-    <header class="header">
+<body>
+  <header class="header">
+    <a href="./index.html" class="logo"> <i class="fas fa-hospital-alt"></i> Cambridge hospital </a>
 
-        <a href="./index.html" class="logo"> <i class="fas fa-hospital-alt"></i> Cambridge hospital </a>
+    <nav class="navbar">
+      <i><a  class="bi bi-backspace-fill"style="color: blue;" href="./index.html"><span> BACK</span></a></i>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<h1 style="margin-top: 95px;" class="heading"> <span> Donation</span> </h1>
     
-        <nav class="navbar">
-          <i><a  class="bi bi-backspace-fill"style="color: blue;" href="./index.html"><span> BACK</span></a></i>
-       
-          
-        <div id="menu-btn" class="fas fa-bars"></div>
-    
-    </header>
-    <h1 style="margin-top: 95px;" class="heading"> <span> Donation</span> </h1>
-    
-    <img src="./image/donation.svg" alt="donation" class="img-fluid mx-auto" width="500px" height="500px">
+    <lottie-player src="https://lottie.host/a968276b-27bd-4633-bbea-fed07973e0d3/uY5TEAIqD7.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop autoplay class=" mx-auto"></lottie-player>
     
     <div style="font-size: large;" class="container mt-3">
             <div class="row">
@@ -48,7 +46,7 @@ html,body{
                     <form>
                         <div class="">
                         <label class="form-label">Name on card</label>
-                        <input style="height: 45px; font-size: medium; border:.2rem solid var(--green)" type="text" class="form-control mb-3" required  placeholder="Enter Your Name">
+                        <input style="height: 45px; font-size: medium; border:.2rem solid var(--green)" type="text" class="form-control mb-3" required pattern="[A-Z a-z]{5,20}" placeholder="Enter Your Name">
                         </div>
 
                       <label class="form-label">Select a Card</label>
@@ -81,7 +79,7 @@ html,body{
                   <form>
                     <div class="">
                     <label class="form-label">Name</label>
-                    <input style="height: 45px; font-size: medium; border:.2rem solid var(--green)" type="text" class="form-control mb-3" required placeholder="Enter Your Name">
+                    <input style="height: 45px; font-size: medium; border:.2rem solid var(--green)" type="text" class="form-control mb-3" required pattern="[A-Z a-z]{5,20}" placeholder="Enter Your Name">
                     </div>
 
                   <label class="form-label">Select Mobile Payment Service</label>
@@ -110,10 +108,11 @@ html,body{
 
     <!-- custom js file link  -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.47/jquery.inputmask.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<!-- bootstrap link -->
-<script src="./js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
   $('#debit').inputmask({mask: "9999-9999-9999-9999", showMaskOnHover: false, placeholder: " "});
@@ -124,6 +123,5 @@ $(document).ready(function(){
   $('#mobile').inputmask({mask: "9999-9999999", showMaskOnHover: false, placeholder: " "});
 });
 </script>
-
 </body>
 </html>
